@@ -1,4 +1,4 @@
-# Ex.No:3b To create a two screens , first screen will take one number input from user. After click on Factorial button, second screen will open and it should display factorial of the same number using Explicit Intents.
+# Ex.No:4 To create a two screens , first screen will take one number input from user. After click on Factorial button, second screen will open and it should display factorial of the same number using Explicit Intents.
 
 
 ## AIM:
@@ -12,25 +12,25 @@ Latest Version Android Studio
 
 ## ALGORITHM:
 ```
-Step 1: Create a New Project in Android Studio
-Step 2: Working with the activity_main.xml File
-Step 3: Working with the MainActivity File
-Step 4: Working with the activity_main2.xml File
-Step 5: Working with the MainActivity2 File
+Step 1: Open Android Stdio and then click on File -> New -> New project.
+Step 2: Then type the Application name as ImplicitIntent and click Next.
+Step 3: Then select the Minimum SDK as shown below and click Next.
+Step 4: Then select the Empty Activity and click Next. Finally click Finish.
+Step 5: Design layout in activity_main.xml.
+Step 6: Display message give in MainActivity file.
+Step 7: Save and run the application.
 
 ```
-
-
 ## PROGRAM:
 ```
 /*
 Program to print the text “ExplicitIntent”.
-Developed by: DHINESH KUMAR T
+Developed by : DHINESH KUMAR T
 Registeration Number : 212221040041
 */
 ```
-#ACTIVITY_MAIN.XML
 
+ACTIVITY-MAIN.XML
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -46,7 +46,9 @@ Registeration Number : 212221040041
         android:layout_height="wrap_content"
         android:text="Welcome to GFG Home Screen"
         android:textAlignment="center"
+        android:textColor="#2196F3"
         android:textSize="28sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -65,9 +67,7 @@ Registeration Number : 212221040041
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
-
-#MAINACTIVITY.JAVA
-
+MAIN-ACTIVITY.JAVA
 ```
 package com.example.explicit;
 import androidx.appcompat.app.AppCompatActivity;
@@ -88,9 +88,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 }
-```
-#ACTIVITY_MAIN2.XML
 
+```
+ACTIVITY-MAIN2.XML
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -104,9 +104,11 @@ public class MainActivity extends AppCompatActivity {
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome to GFG News Screen"
+        android:text="Welcome to GFG New Screen"
         android:textAlignment="center"
+        android:textColor="#8BC34A"
         android:textSize="28sp"
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -125,8 +127,7 @@ public class MainActivity extends AppCompatActivity {
         app:layout_constraintTop_toBottomOf="@+id/editText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
-#MAINACTIVITY2.JAVA
-
+MAIN-ACTIVITY2.JAVA
 ```
 package com.example.explicit;
 import androidx.appcompat.app.AppCompatActivity;
@@ -147,10 +148,15 @@ public class MainActivity2 extends AppCompatActivity {
         startActivity(i);
     }
 }
-
 ```
 
 ## OUTPUT
+<img width="1080" alt="Screenshot 2024-03-14 084952" src="https://github.com/21005291/ExplicitIntent-MAD/assets/112933167/4e12aec6-b992-43c8-a18d-cccb8354866c">
+
+<img width="1079" alt="Screenshot 2024-03-14 085007" src="https://github.com/21005291/ExplicitIntent-MAD/assets/112933167/0bd6e297-6bc6-4ce9-a63b-1c944b03fc7b">
+
+
+
 
 ## RESULT
 Thus a Simple Android Application create a Explicit Intents using Android Studio is developed and executed successfully.
